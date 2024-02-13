@@ -1,0 +1,74 @@
+*{margin:0;padding:0;}
+body{
+    width:100vw;
+    height:100vh;
+    text-align:center;
+    background:url('garden.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, p{font-family: VT323;margin-bottom: 0.5em;}
+h1{font-size: 3em;color: #357933;}
+p{font-size: 1.8em;}
+
+#carta{cursor:pointer;}
+#mensaje{
+    width: 50%;
+    z-index:1; 
+    background-color: white;
+    border: 1px solid black;
+    padding: 1em;
+    text-align: center;
+    transform: scale(0.0);
+    display: none;
+}
+#neeko{width: 20% !important;}
+#primer2{
+    margin-top: 1em;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #357933;
+    display: none;
+}
+#primer2:hover{background-color: #45a049;}
+
+#title{position:absolute;top:5%;display:none;}
+#gato{width: 80px;position:absolute;cursor:pointer;display:none;top:5%;left:5%;}
+#gato img{width:100%;}
+
+#win{display: none;}
+#mensaje img{width: 40%;}
+#recompensa{display:none;}
+
+#emotes1{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    top: 20%;
+    left: 0;
+}
+#emotes2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.emote{opacity:0; width: 12% !important;}
+
+#quedate{display:none;}
+
+@media all and (max-width:758px){
+    #mensaje{width: 90%;}
+}
